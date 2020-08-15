@@ -1,21 +1,15 @@
-.main-header {
-    background: url(../img/background.jpg);
-    background-size: cover;
-    background-position: center;
-    min-height: 600px;
-    color: #fff;
+body {
+    background: #f3f5f6;
 }
 
-.main-header .showcase {
-    padding-top: 100px;
+.nav-preta {
+    background: #202729;
 }
 
-.main-header .showcase .btn {
-    margin-top: 20px;
-    margin-right: 10px;
+.black {
+    background: #202729 !important;
 }
 
-.active-link {
-    color: #d847f1;
-    font-weight: bold;
+.black-text {
+    color: #202729 !important;
 }

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Importar os Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Importar os Icones Fontawesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+  <!-- importar o CSS do materialize -->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+  <!-- importar o CSS de customização -->
+  <link type="text/css" rel="stylesheet" href="blog/main.css" />
+
+  <!-- Avisar ao navegador que o site esta otimizado para Mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Título -->
+  <title>Materialize Theme</title>
+</head>
+
+<body>
+  <!-- Header (início)-->
+  <header class="main-header">
+    <nav class="transparent">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo">Couves Tech</a>
+          <a href="#" data-activates="andre-mobile-nav" class="button-collapse">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </a>
+
+          <ul class="right hide-on-med-and-down">
+            <li><a class="active-link" href="index.html">Home</a></li>
+            <li><a href="solutions.html">Solutions</a></li>
+            <li><a href="signup.html">Sign up</a></li>
+            <li><a href="signup.html" class="btn purple">Login</a></li>
+            <li><a href="https://facebook.com"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+
+          <ul class="side-nav" id="andre-mobile-nav">
+            <h4 class="purple-text text-darken-4 center">Quazzu</h4>
+            <li>
+              <div class="divider"></div><!-- Cria uma linha divisória -->
+            </li>
+            <li><a href="index.html"><i class="fa fa-home grey-text darken-text-4"></i> Home</a></li>
+            <li><a href="solutions.html"><i class="fa fa-cog grey-text darken-text-4"></i> Solutions</a></li>
+            <li><a href="signup.html"><i class="fa fa-users grey-text darken-text-4"></i> Sign up</a></li>
+            <li>
+              <div class="divider"></div><!-- Cria uma linha divisória -->
+            </li>
+            <li><a href="signup.html" class="btn purple">Login</a></li>
+
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+    <!-- Showcase (início) -->
+    <div class="showcase container">
+      <div class="row">
+        <div class="col s12 m10 left">
+          <h5>Python e Django</h5>
+          <h1>Estudar não precisa ser chato</h1>
+          <p>Feito por pessoas como você!</p>
+          <a href="solutions.html" class="btn btn-large white purple-text">Saiba mais</a>
+          <a href="solutions.html" class="btn btn-large purple white-text">Sign Up</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Import jQuery antes do materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Custom JS e jQuery aqui...
+      $('.button-collapse').sideNav();
+    });
+  </script>
+</body>
+
+</html>
