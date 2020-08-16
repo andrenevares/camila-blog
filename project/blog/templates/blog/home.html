@@ -1,8 +1,41 @@
 {% extends 'blog/base.html' %}
 
+{% load static %}
+
 {% block content %}
 <div class="container">
-    <h2>Começarei aqui</h2>
+    <div class="row main-content ">
+        <div class="col s12 m7 margin-column">
+            <div class="card transparent z-depth-0 card-main card-border">
+                <div class="card-img">
+                    <img class="responsive" src="{% static 'blog/images/image-01.jpg' %}" alt="">
+                </div>
+                <div class="card-content">
+                    <span class="card-title">Como tirar uma foto com carão!</span>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m4 center margin-column">
+            <div class="black bloco-titulo">
+                <h2 class="center white-text">Sobre mim</h2>
+            </div>
+            <img class="img-circle" src="{% static 'blog/images/imagem-teste.png' %}"
+                alt="Camila Freitas Arquitetura">
+            <p class="chamada-main-author">Olá meu nome é Camila Freitas! Criei esse espaço para compartilhar com vocês
+                trabalhos, inspirações...
+            </p>
+            <div class="text-black">
+                <a href="https://facebook.com"><i class="fab fa-facebook main-author-icon"></i></a>
+                <a href="https://facebook.com"><i class="fab fa-twitter main-author-icon"></i></a>
+                <a href="https://facebook.com"><i class="fab fa-instagram main-author-icon"></i></a>
+                <a href="https://facebook.com"><i class="fab fa-pinterest main-author-icon"></i></a>
+            </div>
+            <div class="black bloco-titulo mt-4">
+                <h2 class="center white-text">posts mais lidos</h2>
+            </div>
+        </div>
+    </div>
+
 </div>
 
 {% endblock content %}

@@ -2,12 +2,7 @@ body {
     background: #f3f5f6;
 }
 
-
 /* Navbar Início */
-nav {
-    min-height: 80px;
-}
-
 .nav-preta {
     background: #202729;
 }
@@ -40,7 +35,7 @@ nav .button-collapse {
     padding-top: 10px;
     height: auto;
     width: auto;
-    max-height: 50px;
+    max-height: 48px;
     max-width: 250px;
 
 }
