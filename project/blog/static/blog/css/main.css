@@ -231,4 +231,14 @@ nav .button-collapse {
     border-top: none !important;
 }
 
+#categorias a,
+#categorias a:visited,
+#categorias a:active {
+    color: inherit;
+}
+
+#categorias a:hover {
+    color: #808080;
+}
+
 /* Categorias (fim) */
