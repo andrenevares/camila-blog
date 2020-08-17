@@ -203,3 +203,32 @@ nav .button-collapse {
 }
 
 /* Posts recentes (fim) */
+
+/* Popular Posts (início) */
+.popular-posts-header {
+    font-size: 20px;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 7px;
+}
+
+.popular-posts-date {
+    text-align: left;
+    color: #808080;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+/* Popular Posts (fim) */
+
+/* Categorias (início) */
+#categorias .collection {
+    border: none;
+}
+
+#categorias .collection li {
+    text-align: left;
+    border-top: none !important;
+}
+
+/* Categorias (fim) */

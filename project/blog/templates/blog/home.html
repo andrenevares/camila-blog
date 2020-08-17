@@ -115,20 +115,9 @@
             <div class="black bloco-titulo">
                 <h2 class="center white-text">Sobre mim</h2>
             </div>
-            <img class="img-circle" src="{% static 'blog/images/imagem-teste.png' %}"
-                alt="Camila Freitas Arquitetura">
-            <p class="chamada-main-author">Olá meu nome é Camila Freitas! Criei esse espaço para compartilhar com vocês
-                trabalhos, inspirações...
-            </p>
-            <div class="text-black">
-                <a href="https://facebook.com"><i class="fab fa-facebook main-author-icon"></i></a>
-                <a href="https://facebook.com"><i class="fab fa-twitter main-author-icon"></i></a>
-                <a href="https://facebook.com"><i class="fab fa-instagram main-author-icon"></i></a>
-                <a href="https://facebook.com"><i class="fab fa-pinterest main-author-icon"></i></a>
-            </div>
-            <div class="black bloco-titulo mt-4">
-                <h2 class="center white-text">posts mais lidos</h2>
-            </div>
+            <section>
+                {% include 'blog/includes/home-main-author.html' %}
+            </section>
         </div>
     </div>
 
