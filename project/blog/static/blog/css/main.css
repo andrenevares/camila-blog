@@ -43,9 +43,7 @@ body {
 }
 
 /* Navbar Início */
-nav {
-    min-height: 80px;
-}
+
 
 .nav-preta {
     background: #202729;
@@ -74,7 +72,6 @@ nav .button-collapse {
 }
 
 .brand-logo img {
-    padding-top: 10px;
     height: auto;
     width: auto;
     max-height: 50px;
@@ -242,3 +239,11 @@ nav .button-collapse {
 }
 
 /* Categorias (fim) */
+
+
+
+/* MENSAGENS RELATIVAS AOS FORMS */
+/* 
+ul:not(.browser-default)>li {
+    color: red !important;
+} */

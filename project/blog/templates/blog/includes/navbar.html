@@ -5,24 +5,33 @@
         <div class="container">
             <div class="nav-wrapper">
 
-                <a href="#" class="brand-logo"><img class="mt-1"
+                <!-- <a href="{% url 'blog:homepage' %}" class=" brand-logo"><img class="mt-1"
                         src="{% static 'blog/images/camila-freitas-arquitetura-logo.png' %}"
-                        alt="Camila Freitas Logo"></a>
+                        alt="Camila Freitas Logo"></a> -->
 
                 <a href="#" data-activates="andre-mobile-nav" class="button-collapse">
                     <i class="material-icons">menu</i>
-
                 </a>
 
-                <ul class="right hide-on-med-and-down mt-1">
-                    <li><a class="active-link" href="index.html">Home</a></li>
+                <ul class="left hide-on-med-and-down">
+                    <li><a class="active-link" href="{% url 'blog:homepage' %} ">Home</a></li>
                     <li><a href="solutions.html">Solutions</a></li>
-                    <li><a href="signup.html">Sign up</a></li>
-                    <li><a href="signup.html" class="btn transparent z-depth-0 navbutton">Login</a></li>
+
+                </ul>
+                <ul class="right hide-on-med-and-down">
                     <li><a href="https://facebook.com"><i class="fab fa-facebook"></i></a></li>
                     <li><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
                     <li><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
+                    {% if user.is_authenticated %}
+                    <li><a href="{% url 'logout' %} ">Logout</a></li>
+                    <li><a href="{% url 'profile' %"><i class="material-icons grey-text">account_circle</i></a></li>
+                    <li><a href="{% url 'profile' %">{{ user.username }}</a></li>
+                    {% else%}
+                    <li><a href=" {% url 'register' %} ">Registre-se</a></li>
+                    <li><a href=" {% url 'login' %}" class="btn transparent z-depth-0 navbutton">Login</a></li>
+                    {% endif %}
                 </ul>
+
 
                 <ul class="side-nav" id="andre-mobile-nav">
                     <h4 class="black-text center">Camila</h4>

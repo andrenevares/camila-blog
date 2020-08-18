@@ -1,0 +1,25 @@
+{% extends 'blog/base.html' %}
+
+
+{% block content %}
+<div class="container">
+    <div class="card">
+
+        <div class="card-content">
+            <div class="card-title">
+                <p>Logout</p>
+            </div>
+            <div class="row">
+                <a href="{% url 'login' %}" class="btn black z-depth-0">Login</a>
+                <a href="{% url 'blog:homepage' %}" class="btn black z-depth-0">HOME</a>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+{% endblock content %}
